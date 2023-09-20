@@ -2,6 +2,7 @@ name: document_file_save_plus
 description: Save bytes data into Download folder (Android), or show save dialog (iOS).
 version: 2.0.0
 homepage: https://github.com/advoques/document_file_save_plus
+publish_to: none
 
 environment:
   sdk: '>=2.19.0 <3.0.0'
@@ -32,6 +33,8 @@ flutter:
         pluginClass: DocumentFileSavePlusPlugin
       ios:
         pluginClass: DocumentFileSavePlusPlugin
+      windows:
+        dartPluginClass: DocumentFileSavePlus #dirty hack
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
